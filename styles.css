@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+   
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+      align-items: center;
+
+}
+
+nav {
+    width: 60%;
+
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+   
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+    
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url(https://legadodadc.com.br/wp-content/uploads/2021/11/FD1vP6lWQAMNHQl-1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+width: 100%;
+height: 400px;
+display: flex;
+justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .trailer {
+    width: 50%;
+ }
+
+ #sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+ }
+
+ .Description {
+    color: white;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+    width: 80%;
+ }
+
+ .button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+
+ }
+
+.button:hover {
+background-color: white;
+color: black;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-left: 70px;
+    
+    
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'kdam thmor pro', sans-serif;
+ }
+
+ .card:hover {
+    transform: scale(1.05);
+ }
+
+ .banner-1 {
+    background-image: url(https://www.mordeo.org/files/uploads/2022/03/Robert-Pattinson-As-The-Batman-2022-4K-Ultra-HD-Mobile-Wallpaper.jpg);
+ }
+
+ .banner-2 {
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman.png?w=390);
+ }
+
+ .banner-3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyhCVMUbuEqfjt4rHfmHFKYETykzGRI33WQ&usqp=CAU);
+ }
+
+ footer {
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+ }
+
+ span {
+    color: white;
+    font-family: 'kdam thmor pro', sans-serif;
+ }
+
+ .footer-navegation {
+    display: none;
+
+ }  
+
+ .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+ @media(max-width: 768px){
+    .footer-navegation{
+        display: block;
+   }
+   nav {
+    display: none;
+
+   }
+
+   #banner{
+    background-position: 50%; 
+   }
+
+   #trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .content{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .trailer{
+    width: 100%;
+   }
+
+   #sinopse{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .Description{
+    width: 100%;
+   }
+
+   .button{
+    width: 100%;
+    margin-top: 30px;
+   }
+
+   .cards-content{
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+   }
+
+
+ }

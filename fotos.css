@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+header {
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav {
+    width: 60%;
+
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: 80px;
+}
+
+legend {
+    padding: 1px;
+    font-family: 'kdam thmor pro', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 15px white;   
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer {
+    height: 40px;
+    margin-top: 595px;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+body {
+    font-family: 'kdam thmor pro', sans-serif;
+    background-image: url(BANN.jpg);
+    background-position: 50% 5%;
+    background-color: black;
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+   
+
+   }
+.vidro{
+
+        width: 80%;
+        height: 50%;
+        border-radius: 30px;
+        backdrop-filter: blur(8px);
+        background: rgba(253, 252, 252, 0.241);
+        box-shadow: 6px 6px 6px 2px rgba(8, 8, 8, 0.751);
+        border: 2px solid #ffffff30;
+        position:absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 15px;
+    
+}
+span{
+    color: white;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2%;
+    column-gap: 4%;
+    margin-left: 4%;
+    
+    
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: 5% 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 5% 1%;
+    color: white;
+    font-size: 17px;
+    font-family: 'kdam thmor pro', sans-serif;
+ }
+
+ .card:hover {
+    transform: scale(1.05);
+ }
+
+ .banner-1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92U8b8-7ncsvqYGOSho2s3hs6c9JLoXm4GQ&usqp=CAU);
+ }
+
+ .banner-2 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIfacz_jVC7q121XdLOW1AJ4I4JPVggEtvw&usqp=CAU);
+ }
+
+ .banner-3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xM1prkJxGqeKpz1wOeHctzhC7drrgx36dg&usqp=CAU);
+ }
+
+ h1 {
+    padding: 0px;
+    font-family: 'kdam thmor pro', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 15px white;
+    margin-top: 0%;
+ }
+
+ .footer-navegation {
+    display: flex;
+
+ }  
+
+ .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+ @media(max-width: 768px){
+    
+img {
+    display: none;
+}
+
+   body{
+    background-position: 50%;
+
+   }
+
+   .cards-content{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2%;
+    column-gap: 40%;
+    margin-left: 1%;
+    height: 100%;
+    
+   }
+
+   .vidro{
+    width: 90%;
+    display: grid;
+    height: 30%;
+    
+}
+
+.card{
+    width: 180%;
+    height: 100%;
+ 
+}
+
+ }

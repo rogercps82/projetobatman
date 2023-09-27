@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+header {
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav {
+    width: 60%;
+
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: 80px;
+}
+
+ body {
+    font-family: 'kdam thmor pro', sans-serif;
+    background-image: url(ban.png);
+    background-size: cover;
+    
+    
+    .box{
+        width: 50%;
+        height: auto;
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 6px 6px 6px 6px rgba(250, 250, 250, 0.242);
+        border: 2px solid #ffffff30;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 15px;
+        
+        
+                       
+    }
+}
+
+.ImputBox {
+    position:relative;
+    
+}
+
+.inputUser {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+    font-size: 20px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+.inputUser:hover {
+    width: 70%;
+    height: 40px; 
+    margin-bottom: 1px;  
+    background-color: rgba(248, 3, 3, 0.242);
+    color: #000000;
+    letter-spacing: 1px;
+    border-color: #d21617;
+    outline: none;
+    font-size: 20px;
+    font-family: 'kdam thmor pro', sans-serif;
+    
+}
+
+#submit {
+    background-image: linear-gradient(45deg,#fc0303,#000000);
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    height: 20px;
+    width: 100px;
+    border-radius: 8px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+#submit:hover {
+    background-image: linear-gradient(45deg,#000000,#fc0303);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    height: 20px;
+    width: 100px;
+    border-radius: 8px;
+    font-family: 'kdam thmor pro', sans-serif;
+    box-shadow: 2px 2px 2px red;
+    
+}
+
+
+
+legend {
+    padding: 5px;
+    font-family: 'kdam thmor pro', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 15px white;
+
+
+    
+    
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+  
+
+
+
+ span {
+    color: white;
+    font-family: 'kdam thmor pro', sans-serif;
+    font-size: 8px;
+ }
+
+ .footer-navegation {
+    display: none;
+
+ }  
+
+ .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+ footer {
+    height: 150px;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+ }
+
+ .labelimput {
+    font-size: 20px;
+    color: rgb(249, 247, 247);
+    text-shadow: 2px 2px 2px rgb(250, 7, 7);
+   
+ }
+
+ .ImputBox :focus{
+    background-color: #d21617;
+    
+ }
+
+
+
+
+
+
+
+ @media(max-width: 768px){
+
+    .footer-navegation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        background-position: 50%;     
+        background-repeat: no-repeat;
+        background-size: cover;   
+        background-color: #000000;
+    }   
+  
+    .ImputBox {
+        width: 80%;
+        height: 5px;
+        display:contents;
+        flex-direction: column;
+    }
+
+    .labelimput {
+        font-size: 10px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    #submit{
+        background-image: linear-gradient(45deg,#fc0303,#000000);
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    height: 20px;
+    width: 70px;
+    border-radius: 1px;
+    
+    }
+  
+    }
+ 
